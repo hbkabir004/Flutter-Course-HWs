@@ -1,3 +1,4 @@
+import 'package:Profile_Page/editPage.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -28,29 +29,39 @@ class _ProfilePageState extends State<ProfilePage> {
             ),
           ),
           actions: [
-            Padding(
-              padding: EdgeInsets.all(12),
-              child: Container(
-                height: 20,
-                width: 80,
-                decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.black,
-                    width: 3,
-                    style: BorderStyle.solid,
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => EditPage(),
                   ),
-                  borderRadius: BorderRadius.circular(15),
-                  color: Colors.green.shade400,
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Text("Edit"),
-                    Icon(
-                      Icons.create_sharp,
-                      size: 12,
+                );
+              },
+              child: Padding(
+                padding: EdgeInsets.all(12),
+                child: Container(
+                  height: 20,
+                  width: 80,
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                      width: 3,
+                      style: BorderStyle.solid,
                     ),
-                  ],
+                    borderRadius: BorderRadius.circular(15),
+                    color: Colors.green.shade400,
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Text("Edit"),
+                      Icon(
+                        Icons.create_sharp,
+                        size: 12,
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

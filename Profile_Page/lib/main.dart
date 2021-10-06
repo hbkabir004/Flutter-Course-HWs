@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:Profile_Page/splashScreen.dart';
 import 'package:Profile_Page/profilePage.dart';
 
 void main() {
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ProfilePage(),
+      home: SplashScreen(),
     );
   }
 }
