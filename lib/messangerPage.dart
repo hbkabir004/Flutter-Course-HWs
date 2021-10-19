@@ -1,16 +1,50 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-class MessangerPage extends StatefulWidget {
-  const MessangerPage({Key key}) : super(key: key);
+class Messenger_Page extends StatefulWidget {
+  const Messenger_Page({Key key}) : super(key: key);
 
   @override
-  _MessangerPageState createState() => _MessangerPageState();
+  _Messenger_PageState createState() => _Messenger_PageState();
 }
 
-class _MessangerPageState extends State<MessangerPage> {
+class _Messenger_PageState extends State<Messenger_Page> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        // leading: ,
+        actions: [
+          Container(
+            child: FlatButton.icon(
+              onPressed: (){},
+              icon: Icon(
+                Icons.message,
+                size: 15,
+                color: Color.fromRGBO(31, 31, 45,0.6),
+              ),
+              label: Text(
+                "Messages",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.w500,
+                    color: Color.fromRGBO(31, 31, 31, 0.6)
+                ),
+              ),
+            ),
+          )
+        ],
+        // centerTitle: ,
+    title: Text(
+    "Messenger Page",
+    style: TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.w800,
+    color: Colors.grey.shade200,
+    fontStyle: FontStyle.italic,
+      ),
+    ),
+    ),
+    );
   }
 }
