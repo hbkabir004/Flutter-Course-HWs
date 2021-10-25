@@ -25,9 +25,9 @@ class _EditPageState extends State<EditPage> {
             height: MediaQuery.of(context).size.height / 10,
             width: MediaQuery.of(context).size.width / 10,
             decoration: BoxDecoration(
-              color: Colors.transparent,
+              color: Color.fromRGBO(255, 122, 23, 1),
               border: Border.all(
-                color: Color.fromRGBO(201, 204, 212, 1),
+                color: Color.fromRGBO(234, 86, 255, 1),
                 width: 3,
                 style: BorderStyle.solid,
               ),
@@ -52,7 +52,7 @@ class _EditPageState extends State<EditPage> {
                 style: TextStyle(
                   fontWeight: FontWeight.w600,
                   fontSize: 15,
-                  color: Colors.white,
+                  color: Color.fromRGBO(0, 0, 0, 0.5),
                 ),
               ),
             ),
@@ -64,7 +64,7 @@ class _EditPageState extends State<EditPage> {
             fontSize: 25,
             fontWeight: FontWeight.w800,
             fontStyle: FontStyle.italic,
-            color: Colors.white,
+            color: Color.fromRGBO(120, 255, 125, 1),
           ),
           textAlign: TextAlign.center,
         ),
@@ -81,11 +81,11 @@ class _EditPageState extends State<EditPage> {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25),
                 border: Border.all(
-                  color: Color.fromRGBO(201, 204, 212, 1),
+                  color: Color.fromRGBO(110, 150, 200, 1),
                   width: 3,
                   style: BorderStyle.solid,
                 ),
-                color: Colors.transparent,
+                color: Color.fromRGBO(255, 120, 20, 1),
               ),
               child: FlatButton.icon(
                 onPressed: () {
@@ -106,36 +106,13 @@ class _EditPageState extends State<EditPage> {
                   style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w600,
-                    color: Colors.white,
+                    color: Color.fromRGBO(0, 0, 0, .5),
                   ),
                 ),
               ),
             ),
           ),
         ],
-      ),
-      // extendBodyBehindAppBar: true,
-      body: Center(
-        child: Container(
-            height: 600,
-            width: 450,
-            decoration: BoxDecoration(
-              border: Border.all(
-                color: Colors.blueGrey,
-                width: 5,
-                style: BorderStyle.solid,
-              ),
-              borderRadius: BorderRadius.circular(25),
-            ),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text("Editing..."),
-                SizedBox(
-                  width: 10,
-                ),
-              ],
-            )),
       ),
     );
   }
