@@ -77,138 +77,138 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Align(
           alignment: Alignment.center,
           child: Container(
-              child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              //Profile Image And Name Container
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                //Profile Image And Name Container
 
-              Container(
-                height: MediaQuery.of(context).size.height / 6,
-                width: MediaQuery.of(context).size.width,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      height: MediaQuery.of(context).size.height / 4,
-                      width: MediaQuery.of(context).size.width / 3.3,
-                      decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage("images/me.png"),
-                            fit: BoxFit.fill,
-                          ),
-                          shape: BoxShape.rectangle,
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: Color.fromRGBO(34, 36, 45, 1),
-                            width: 3,
-                            style: BorderStyle.solid,
-                          )),
-                    ),
+                Container(
+                  height: MediaQuery.of(context).size.height / 6,
+                  width: MediaQuery.of(context).size.width,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        height: MediaQuery.of(context).size.height / 4,
+                        width: MediaQuery.of(context).size.width / 3.3,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage("images/me.png"),
+                              fit: BoxFit.fill,
+                            ),
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.circular(10),
+                            border: Border.all(
+                              color: Color.fromRGBO(34, 36, 45, 1),
+                              width: 3,
+                              style: BorderStyle.solid,
+                            )),
+                      ),
 
-                    //profile name and address column
-                    Container(
-                      height: MediaQuery.of(context).size.height / 4,
-                      width: MediaQuery.of(context).size.width / 1.5,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(right: 77),
-                            child: Text(
-                              'Md. Hasanul Banna Khan Abir',
+                      //profile name and address column
+                      Container(
+                        height: MediaQuery.of(context).size.height / 4,
+                        width: MediaQuery.of(context).size.width / 1.5,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.only(right: 77),
+                              child: Text(
+                                'Md. Hasanul Banna Khan Abir',
+                                style: TextStyle(
+                                  fontStyle: FontStyle.normal,
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.w700,
+                                  color: Color.fromRGBO(255, 255, 255, 1),
+                                ),
+                                textAlign: TextAlign.start,
+                              ),
+                            ),
+                            Text(
+                              'North Western University, Khulna.',
                               style: TextStyle(
+                                fontSize: 16,
+                                fontWeight: FontWeight.w600,
                                 fontStyle: FontStyle.normal,
-                                fontSize: 25,
-                                fontWeight: FontWeight.w700,
                                 color: Color.fromRGBO(255, 255, 255, 1),
                               ),
                               textAlign: TextAlign.start,
                             ),
-                          ),
-                          Text(
-                            'North Western University, Khulna.',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.w600,
-                              fontStyle: FontStyle.normal,
-                              color: Color.fromRGBO(255, 255, 255, 1),
-                            ),
-                            textAlign: TextAlign.start,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-
-              //Bio Container
-
-              Container(
-                height: MediaQuery.of(context).size.height / 2.5,
-                width: MediaQuery.of(context).size.width,
-                margin: EdgeInsets.only(
-                  bottom: MediaQuery.of(context).size.height / 5,
-                ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    //Text and icon container
-                    Container(
-                      height: MediaQuery.of(context).size.height / 8,
-                      width: MediaQuery.of(context).size.width / 7,
-                      margin: EdgeInsets.only(
-                        right: MediaQuery.of(context).size.width / 1.3,
-                        top: MediaQuery.of(context).size.height / 20,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Bio",
-                            style: TextStyle(
-                              fontStyle: FontStyle.normal,
-                              fontWeight: FontWeight.w500,
-                              fontSize: 20,
-                              color: Color.fromRGBO(255, 255, 255, 1),
-                            ),
-                          ),
-                          Icon(
-                            Icons.create_rounded,
-                            color: Color.fromRGBO(248, 249, 250, .5),
-                            size: 18,
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    //Text Container
-
-                    Container(
-                      height: MediaQuery.of(context).size.height / 4.6,
-                      width: MediaQuery.of(context).size.width,
-                      padding: EdgeInsets.symmetric(
-                        horizontal: 15,
-                      ),
-                      child: Text(
-                        '''Md. Hasanul Banna Khan Abir, also known as Aungstrome Abir. Studying BSc. in CSE in the North Western University. Currently living in 25/b, Hazi Mohsin Road, Khulna, Bangladesh.
-                          ''',
-                        style: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w500,
-                          fontStyle: FontStyle.normal,
-                          color: Color.fromRGBO(255, 255, 255, 1),
+                          ],
                         ),
-                        textAlign: TextAlign.start,
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
 
-              //Wrap widget container
+                //Bio Container
 
-              Container(
+                Container(
+                  height: MediaQuery.of(context).size.height / 2.5,
+                  width: MediaQuery.of(context).size.width,
+                  margin: EdgeInsets.only(
+                    bottom: MediaQuery.of(context).size.height / 5,
+                  ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      //Text and icon container
+                      Container(
+                        height: MediaQuery.of(context).size.height / 8,
+                        width: MediaQuery.of(context).size.width / 7,
+                        margin: EdgeInsets.only(
+                          right: MediaQuery.of(context).size.width / 1.3,
+                          top: MediaQuery.of(context).size.height / 20,
+                        ),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              "Bio",
+                              style: TextStyle(
+                                fontStyle: FontStyle.normal,
+                                fontWeight: FontWeight.w500,
+                                fontSize: 20,
+                                color: Color.fromRGBO(255, 255, 255, 1),
+                              ),
+                            ),
+                            Icon(
+                              Icons.create_rounded,
+                              color: Color.fromRGBO(248, 249, 250, .5),
+                              size: 18,
+                            ),
+                          ],
+                        ),
+                      ),
+
+                      //Text Container
+
+                      Container(
+                        height: MediaQuery.of(context).size.height / 4.6,
+                        width: MediaQuery.of(context).size.width,
+                        padding: EdgeInsets.symmetric(
+                          horizontal: 15,
+                        ),
+                        child: Text(
+                          '''Md. Hasanul Banna Khan Abir, also known as Aungstrome Abir. Studying BSc. in CSE in the North Western University. Currently living in 25/b, Hazi Mohsin Road, Khulna, Bangladesh.
+                          ''',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w500,
+                            fontStyle: FontStyle.normal,
+                            color: Color.fromRGBO(255, 255, 255, 1),
+                          ),
+                          textAlign: TextAlign.start,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                //Wrap widget container
+
+                Container(
                   height: MediaQuery.of(context).size.height / 6,
                   width: MediaQuery.of(context).size.width,
                   child: Wrap(
@@ -361,9 +361,11 @@ class _ProfilePageState extends State<ProfilePage> {
                         ),
                       ),
                     ],
-                  )),
-            ],
-          )),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ),
     );

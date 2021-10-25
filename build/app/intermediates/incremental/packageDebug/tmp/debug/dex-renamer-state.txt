@@ -1,4 +1,4 @@
-#Sat Oct 23 00:03:54 BDT 2021
+#Tue Oct 26 04:04:19 BDT 2021
 base.0=C\:\\Users\\Aungstrome\\StudioProjects\\Profile_Page\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
