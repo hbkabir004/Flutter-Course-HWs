@@ -60,22 +60,25 @@ List<PostModel> post = [
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
       profileImageURL: 'images/me.png',
-      caption: 'Khulna Govt. College',
-      address: '',
+      caption: 'Khulna Government College',
+      address: 'Hasanbag Road, '
+          'Khulna, Bangladesh',
       postImageURL: 'images/Posts/postImage01.jpg',
       likes: 5355),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
       profileImageURL: 'images/me.png',
-      caption: '',
-      address: '',
+      caption: 'Government Sundarban Adarsha College',
+      address: '91 Khanjhan Ali road, '
+          'Jessore, Bangladesh',
       postImageURL: 'images/Posts/postImage01.jpg',
       likes: 4845),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
       profileImageURL: 'images/me.png',
-      caption: '',
-      address: '',
+      caption: 'Khulna Islamia Degree College',
+      address: ' M A Bari St, '
+          'Khulna, Bangladesh',
       postImageURL: 'images/Posts/postImage01.jpg',
       likes: 245),
 ];
