@@ -9,7 +9,7 @@ List<PostModel> post = [
       profileImageURL: 'images/me.png',
       caption: 'Khulna Government Mahila College',
       address: 'Jalil - Sarani, Khulna, Bangaldesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_1.jpg',
       likes: 2345),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -17,21 +17,21 @@ List<PostModel> post = [
       caption: 'Khulna College',
       address: 'Seikh Para Main Rd, '
           'Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_2.jpg',
       likes: 345),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
       profileImageURL: 'images/me.png',
       caption: 'Ahsanullah College',
       address: 'KDA Ave, Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_3.jpg',
       likes: 545),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
       profileImageURL: 'images/me.png',
       caption: 'Azam Khan Government Commerce College',
       address: 'Babu Khan Rd, Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_4.jpg',
       likes: 45),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -39,7 +39,7 @@ List<PostModel> post = [
       caption: 'Govt. Brajalal (BL) College',
       address: 'Kashipur, College Rd, '
           'Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_5.jpg',
       likes: 35),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -47,7 +47,7 @@ List<PostModel> post = [
       caption: 'Govt. M. M. City College',
       address: '300 Khan Jahan Ali Rd, '
           'Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_6.jpg',
       likes: 23),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -55,7 +55,7 @@ List<PostModel> post = [
       caption: 'Khulna Public College',
       address: 'Public college, road, '
           'Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_7.jpg',
       likes: 845),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -63,7 +63,7 @@ List<PostModel> post = [
       caption: 'Khulna Government College',
       address: 'Hasanbag Road, '
           'Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_8.jpg',
       likes: 5355),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -71,7 +71,7 @@ List<PostModel> post = [
       caption: 'Government Sundarban Adarsha College',
       address: '91 Khanjhan Ali road, '
           'Jessore, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_9.jpg',
       likes: 4845),
   PostModel(
       username: 'Md. Hasanul Banna Khan Abir',
@@ -79,7 +79,7 @@ List<PostModel> post = [
       caption: 'Khulna Islamia Degree College',
       address: ' M A Bari St, '
           'Khulna, Bangladesh',
-      postImageURL: 'images/Posts/postImage01.jpg',
+      postImageURL: 'images/Posts/post_10.jpg',
       likes: 245),
 ];
 
@@ -144,7 +144,7 @@ class _PostPageState extends State<PostPage> {
             itemCount: 10,
             itemBuilder: (BuildContext context, int index) {
               return Container(
-                height: MediaQuery.of(context).size.height / 3.5,
+                height: MediaQuery.of(context).size.height / 1.5,
                 width: MediaQuery.of(context).size.width,
                 margin: EdgeInsets.symmetric(vertical: 15),
                 decoration: BoxDecoration(

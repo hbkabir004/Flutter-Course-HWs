@@ -72,7 +72,7 @@ class _FollowingPageState extends State<FollowingPage> {
         ],
       ),
       body: Align(
-          alignment: Alignment.topLeft,
+          alignment: Alignment.centerLeft,
           child: ListView.builder(
             padding: EdgeInsets.symmetric(horizontal: 12),
             itemCount: following.length,
@@ -85,23 +85,32 @@ class _FollowingPageState extends State<FollowingPage> {
                         radius: 35,
                         backgroundImage: AssetImage("${following[index].profileImageURL}"),
                       ),
-                      Expanded(child: RichText(
-                        textAlign: TextAlign.justify,
+                      Expanded(
+
+                          child: Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
+                            child: RichText(
+                        textAlign: TextAlign.start,
                         text: TextSpan(
-                          text: "${following[index].username}",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.w700,
-                            color: Color.fromRGBO(21, 21, 21, .6),
-                          ),
-                          // children: [
-                          //   TextSpan(
-                          //     text: ,
-                          //     style: ,
-                          //   )
-                          // ],
+                            text: "${following[index].username}\n",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w700,
+                              color: Color.fromRGBO(21, 21, 21, 1),
+                            ),
+                            children: [
+                              TextSpan(
+                                text: "${following[index].dateTime}",
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w700,
+                              color: Color.fromRGBO(21, 21, 21, .6),
+                              )
+                              ),
+                            ],
                         ),
-                      )
+                      ),
+                          )
                       ),
                     ],
                   )

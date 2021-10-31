@@ -1,4 +1,4 @@
-#Sat Oct 30 22:24:00 BDT 2021
+#Sun Oct 31 22:05:53 BDT 2021
 base.0=C\:\\Users\\DELL\\StudioProjects\\Profile_Page\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
