@@ -99,16 +99,16 @@ class _MessengerPageState extends State<MessengerPage> {
             //header list view container
 
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 12),
-              height: MediaQuery.of(context).size.height/2,
+              margin: EdgeInsets.symmetric(vertical: 10),
+              height: MediaQuery.of(context).size.height/1.2,
               width: MediaQuery.of(context).size.width,
               child: ListView.builder(
                 scrollDirection: Axis.vertical,
                   itemCount: imageAvatar.length,
                 itemBuilder: (BuildContext context, int index){
                     return Container(
-                        height: MediaQuery.of(context).size.height/4,
-                      width: MediaQuery.of(context).size.height/4,
+                        height: MediaQuery.of(context).size.height/10,
+                      width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
                         border: Border.all(
@@ -118,7 +118,7 @@ class _MessengerPageState extends State<MessengerPage> {
                         ),
                         image: DecorationImage(
                           image: AssetImage("${imageAvatar[index]}"),
-                          fit: BoxFit.cover,
+                          fit: BoxFit.contain,
                         )
                       ),
                     );
