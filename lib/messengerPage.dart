@@ -2,6 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:Profile_Page/profilePage.dart';
 
+List<String> imageAvatar=[
+  'images/Profile_Images/user_1.jpg',
+  'images/Profile_Images/user_2.jpg',
+  'images/Profile_Images/user_3.jpg',
+  'images/Profile_Images/user_4.jpg',
+  'images/Profile_Images/user_5.jpg',
+  'images/Profile_Images/user_6.jpg',
+  'images/Profile_Images/user_7.jpg',
+  'images/Profile_Images/user_8.jpg',
+  'images/Profile_Images/user_9.jpg',
+  'images/Profile_Images/user_10.jpg',
+];
+
 class MessengerPage extends StatefulWidget {
   const MessengerPage({Key key}) : super(key: key);
 
@@ -77,6 +90,43 @@ class _MessengerPageState extends State<MessengerPage> {
             fontSize: 20,
             color: Color.fromRGBO(255, 255, 255, 1),
           ),
+        ),
+      ),
+      body: Align(
+        alignment: Alignment.centerLeft,
+        child: Column(
+          children: [
+            //header list view container
+
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 12),
+              height: MediaQuery.of(context).size.height/2,
+              width: MediaQuery.of(context).size.width,
+              child: ListView.builder(
+                scrollDirection: Axis.vertical,
+                  itemCount: imageAvatar.length,
+                itemBuilder: (BuildContext context, int index){
+                    return Container(
+                        height: MediaQuery.of(context).size.height/4,
+                      width: MediaQuery.of(context).size.height/4,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.blueAccent,
+                          width: 3,
+                          style: BorderStyle.solid,
+                        ),
+                        image: DecorationImage(
+                          image: AssetImage("${imageAvatar[index]}"),
+                          fit: BoxFit.cover,
+                        )
+                      ),
+                    );
+
+                },
+              ),
+            )
+          ],
         ),
       ),
     );
