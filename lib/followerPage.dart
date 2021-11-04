@@ -74,7 +74,7 @@ class _FollowerPageState extends State<FollowerPage> {
           alignment: Alignment.centerLeft,
           child: ListView.builder(
               itemCount: followermodel.length,
-              itemBuilder: (BuildContext context,int index){
+              itemBuilder: (BuildContext context, int index){
                 return Container(
                     margin: EdgeInsets.symmetric(vertical: 10),
                     height: MediaQuery.of(context).size.height/10,
