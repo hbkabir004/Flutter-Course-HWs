@@ -5,6 +5,8 @@ import 'package:Profile_Page/postPage.dart';
 import 'package:Profile_Page/followerPage.dart';
 import 'package:Profile_Page/followingPage.dart';
 import 'package:Profile_Page/messengerPage.dart';
+import "package:Profile_Page/splashScreen.dart";
+
 
 List<String> posts = [
   "images/Posts/post_1.jpg",

@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:Profile_Page/profilePage.dart';
+import "package:Profile_Page/timeLine.dart";
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key key}) : super(key: key);
